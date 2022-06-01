@@ -1,0 +1,263 @@
+
+/*CUSTOM PROPERTIES*/
+@font-face {
+    font-family: "hero__main";
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-size: 48px;
+    
+}
+
+@font-face {
+    font-family: "secondaryText";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+    
+    
+}
+
+@font-face{
+    font-family : "headerLogoText";
+    src : url(./fonts/Roboto/Roboto-Medium.ttf);
+    
+}
+
+@font-face{
+    font-family : "quote";
+    src : url(./fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
+:root{
+    --primaryTextColor : #F9FAF8;
+    --darkBackground : #1F2937;
+    --secondaryText : #E5E7EB;
+}
+/*END OF CUSTOM PROPERTIES*/
+
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*NAVBAR START*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkBackground);
+    padding : 10px;
+    position: fixed;
+    width: 100vw;
+}
+
+.logo{
+    margin-left: 10%;
+    text-decoration: none;
+    font-family: headerLogoText;
+    font-size : 24px;
+    color: var(--primaryTextColor);
+    white-space: nowrap;
+}
+
+.navbar-links{
+    margin-right: 10%; 
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+}
+.navbar-links li a{
+    margin-left : 15px;
+    font-family: secondaryText;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--secondaryText);
+    display: block;
+}
+
+
+/*NAVBAR END*/
+
+/*HERO START*/
+.main-hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkBackground);
+    height: 100vh;
+}
+
+.left-column{
+    margin: 10%;
+}
+
+.right-column{
+    margin-right: 10%;
+}
+
+.img{
+    width: 650px;
+}
+
+.hero-title{
+    font-size: 48px;
+    font-family: hero__main;
+    color: var(--primaryTextColor);
+}
+
+.hero-subtext{
+    font-size : 18px;
+    color: var(--secondaryText);
+    font-family : secondaryText;
+    padding:5px;
+}
+
+.btn{
+    background-color: #3882F6;
+    width: 145px;
+    padding: 10px;
+    border:none;
+    border-radius : 7px;
+    margin-top: 7px;
+    color: var(--primaryTextColor);
+    font-size: 15px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+/*HERO END*/
+
+/*INFO START*/
+.info-main-container{
+    height: 60vh;
+}
+.info-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 75px;
+    font-size: 20px;
+    font-family: headerLogoText;
+    color: var(--darkBackground);
+}
+.square-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square-sections{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+.info-main-container img{
+    width: 200px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+.square-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.square-items p{
+    padding: 5px;
+    font-family: secondaryText;
+    color: dark-grey;
+}
+/*INFO END*/
+
+/*QUOTE START*/
+    .quote-main-container{
+        height: 45vh;
+        background-color: var(--secondaryText);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.quote-container{
+    width: 50%;
+}
+
+.author{
+    display: flex;
+    justify-content : flex-end;
+    align-items: center;
+}
+
+.quote p{
+    font-size: 36px;
+    font-family: quote;
+    color: var(--darkBackground);
+}
+
+.author h1{
+    font-family: headerLogoText;
+    color: var(--darkBackground)
+}
+/*QUOTE END*/
+
+/*CALLTOACTION START*/
+.calltoaction-main-container{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container{
+    background-color: #3882F6;
+    width: 75%;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-container h1{
+    font-family: headerLogoText;
+    color: white;
+}
+
+.box-container p{
+    font-family: secondaryText;
+    color: var(--secondaryText)
+}
+
+.action-btn{
+    height: 40px;
+    width: 150px;
+    border-radius : 10px;
+    border: white solid 2px;
+    background-color: transparent;
+    color: white;
+    font-family: hero__main;
+    
+}
+
+.action-btn:hover{
+    cursor: pointer;
+}
+
+footer{
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: secondaryText;
+}
+/*CALLTOATION END*/
